@@ -3,7 +3,7 @@ function ProductList() {
  const [products, setProducts] = useState([]);
  useEffect(() => {
     console.log("I am here");
- fetch('http://localhost:5000/products')
+ fetch('https://e-commerce-backend-iota-three.vercel.app/products')
  .then(response => response.json())
  .then(data => setProducts(data));
  }, []);
